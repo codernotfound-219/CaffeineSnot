@@ -1,3 +1,7 @@
+:root {
+    --text-color: rgb(40, 225, 169);
+}
+
 * {
     scroll-behavior: smooth;
     margin: 0 0 0 0;
@@ -5,7 +9,53 @@
 }
 
 .TopBar {
-    padding-top: 2%;
+    padding: 2%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+.TopBar h1 {
+    font-family: 'Orbitron', medium;
+    color: var(--text-color);
+    font-size: 42px;
+}
+
+.material-icons {
+    color: white;
+    size: 32;
+    text-decoration: none;
+}
+
+.diffPages {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.diffPages a {
+    padding: 2%;
+    font-family: 'Antonio';
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+}
+
+.login {
+    font-family: 'Orbitron';
+    font-size: 16px;
+    color: white;
+}
+
+button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
 }
