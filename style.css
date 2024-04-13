@@ -1,0 +1,11 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0 0 0 0;
+    background-color: black;
+}
+
+.TopBar {
+    padding-top: 2%;
+    display: flex;
+    justify-content: end;
+}
