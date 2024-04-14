@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Caveat+Brush&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-  font-family: sans-serif;
-  margin: 0;
+  scroll-behavior: smooth;
   padding: 0;
-  color: #fff; 
-  background-color: #000000; /
+  margin: 0;
+  background-color: black;
+  background-image: url(../../Images/Background/Backdrop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
 a {
@@ -21,17 +33,14 @@ a {
   align-items: center;
 }
 
-
-header {
-  background-color: #111;
-  width:100%;
-  padding: 10px 20px;
-}
-
 .logo {
-  font-size: 2em;
+  font-family: 'Orbitron';
+  font-size: 40px;
   font-weight: bold;
-  color: #fff;
+  color: transparent;
+  background-image: linear-gradient(45deg, #0080ff, #00ffdd);
+  background-size: 100%;
+  background-clip: text;
 }
 
 .logo:hover {
@@ -41,39 +50,51 @@ header {
 .full-bar {
   display: flex;
   width: 100%; 
-  height: 50px; 
+  height: 75px; 
   background-color: rgb(48, 47, 47); 
 }
 
 .bar-element {
+  font-family: 'Bebas Neue';
+  font-size: 32px;
   flex: 1;
   text-align: center; 
   color: white; 
-  padding: 10px; 
+  padding: 20px; 
 }
 .bar-element:hover {
-  background-color: white;
-  transition: color 0.s ease-in-out; 
+  background-color: rgb(137, 137, 137);
+  transition: color 0.2s ease-in-out; 
   color:black;
-  font-size: larger;
-  font-family: monospace;
+  font-family: 'Bebas Neue';
+  font-size: 32px;
 };
+
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust as needed */
-  gap: 20px;
+  display: flex; 
+  justify-content: center;/* Adjust as needed */
+  gap: 50px;
+  height: 400px;
 }
 
 .video-card {
+  background-color: white;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
 }
 
+h3 {
+  font-family: 'Bebas Neue';
+  font-size: 22px;
+
+}
+
 .video-card iframe {
-  width: 80%;
-  height: 250%; /* Adjust height as needed */
+
+  width: 60%;
+  height: 500px; /* Adjust height as needed */
 }
 
 /* Responsiveness (Adjust media queries as needed) */

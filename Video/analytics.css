@@ -33,15 +33,9 @@ body {
   font-size: 42px;
 }
 
-.analytics {
-  display: flex;
-  max-width: 50%;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .chart{
-
+  background-color: transparent;
   max-width: 900px;
   height: 450px;
   margin: 0 auto;
@@ -69,31 +63,34 @@ body {
 
 }
 
-.piechart {
-  max-height: 400px;
-  display: flex;
-  align-self: center;
-}
-
 #myChart {
   height: 600px;
-  max-width: 500px;
+  max-width: 1500px;
   background-color: white;
   padding: 20px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-
+  border-radius: 50px;
+  margin-top: 20px;
 }
 
-.container {
-  width:400px;
-
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-
+#orangeCap {
+    height: 600px;
+      max-width: 1500px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 50px;
+      margin-top: 20px;
 }
-.piechart h2 {
-  font-family: 'Bebas Neue';
-  font-size: 32px;
-  color: white;
+
+#purpleCap {
+    height: 600px;
+      max-width: 1500px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 50px;
+      margin-top: 20px;
+}
+
+h2 {
+  font-family: 'Orbitron';
+  margin-top: 50px;
 }
