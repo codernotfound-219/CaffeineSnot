@@ -3,16 +3,16 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Orbitron:wght@400..900&family=Patrick+Hand+SC&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Patrick+Hand+SC&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="css/current.css">
+    <link rel="stylesheet" href="css/insights.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="login.js"></script>
     <title>Crick?</title>
 </head>
 <body>
+
     <!-- TOPBAR -->
     <div class="TopBar">
         <h1><span>Critter</span></h1>
@@ -27,7 +27,7 @@
             <div class="searchBar">
                 <a href="" class="material-icons">search</a>
             </div>
-            <button class="login">LOGIN</button>
+            <button onclick="loginProvider()" class="login">LOGIN</button>
         </div>
     </div>
 
@@ -35,26 +35,26 @@
     <div class="current">
         <img id="cskpic" src="Images/DHONI.jpg" alt="picNotFound">
         <div class="cutout">
-            <span id="text1">MATCHDAY - 29</span>
+            <a href="" id="text1">MATCHDAY - 29</a>
             <div class="logos">
                 <img src="Images/csk.png" alt="">
                 <text id="text2">VS</text>
                 <img id="milogo" src="Images/mi.png" alt="">
             </div>
-            <text>April 15th | 7:30 PM</text>
+            <text>April 14th | 7:30 PM</text>
             <span id="text3">Wankhedhe Stadium, Mumbai</span>
 
             <div class="accessory">
                 <div class="sponsors">
                     <span>SPONSORS</span>
-                    <div class="spimg" style="background-color: transparent;">
+                    <div class="spimg" style="background-color: white;">
                         <img id="tataimg" src="Images/Accessory/tata.png" alt="">
                         <img id="dream11img" src="Images/Accessory/Dream11.png" alt="">
                     </div>
                 </div>
                 <div class="streamers">
                     <span>STREAMERS</span>
-                    <div class="stimg" style="background-color: transparent;">
+                    <div class="stimg" style="background-color: white;">
                         <img src="Images/Accessory/jio.png" alt="" id="jio">
                         <img src="Images/Accessory/SS.png" alt="" id="ss">
                     </div>
@@ -63,5 +63,100 @@
         </div>
         <img id="mipic" src="Images/rohit.jpg" alt="">
     </div>
+
+    <!-- INSIGHTS -->
+
+    <div class="container">
+        <span>LATEST INSIGHTS</span>
+        <div class="cards">
+            <a  style="text-decoration: none;"
+                href="https://www.espncricinfo.com/series/indian-premier-league-2024-1410320/delhi-capitals-vs-chennai-super-kings-13th-match-1422131/live-cricket-score"
+                target="_blank">
+                <div id="card1">
+                    <img src="Images/Insights/sample1.png" alt="">
+                        <text class="title">
+                            <span>Unfortunate loss for CSK!</span>
+                            <span>ESPN</span>
+                        </text>
+                        <hr class="solid">
+                        <text class="creds">
+                            <span>April 10, 2024 | 𓁹 3.9 K</span>
+                        </text>
+                </div>
+            </a>
+            <a  style="text-decoration: none;"
+                href="https://www.espncricinfo.com/story/ipl-rishabh-pant-feels-like-i-m-going-to-make-my-debut-again-1424735"
+                target="_blank">
+                <div id="card2">
+                    <img src="Images/Insights/sample2.png" alt="">
+                        <text class="title">
+                            <span>Pant back to cricketing form!</span>
+                            <span>ESPN</span>
+                        </text>
+                        <hr class="solid">
+                        <text class="creds">
+                            <span>April 8, 2024 | 𓁹 5.2 K</span>
+                        </text>
+                </div>
+            </a>
+            <a  style="text-decoration: none;"
+                href="https://www.youtube.com/watch?v=-qctNkrRfDY"
+                target="_blank">
+                    <div id="card3">
+                        <img src="Images/Insights/sample3.png" alt="">
+                        <text class="title">
+                            <span>Thala enters the den!</span>
+                            <span>youtube</span>
+                        </text>
+                        <hr class="solid">
+                        <text class="creds">
+                            <span>April 3, 2024 | 𓁹 1.1 M</span>
+                        </text>
+                    </div>
+            </a>
+            <a  style="text-decoration: none;"
+                href="https://www.espn.in/video/clip/_/id/36205993"
+                target="_blank">
+                <div id="card4">
+                    <img src="Images/Insights/sample4.png" alt="">
+                    <text class="title">
+                        <span>RCB is off to a Phenomenal Start!</span>
+                        <span>ESPN</span>
+                    </text>
+                    <hr class="solid">
+                    <text class="creds">
+                        <span>April 1, 2024 | 𓁹 4.2 K</span>
+                    </text>
+                </div>
+            </a>
+        </div>
+    </div>
+
+   <!-- LOGIN  -->
+
+   <div class="popup">
+    <div onclick="closure()" class="close-btn">&times;</div>
+    <div class="form">
+        <h2>Log In</h2>
+        <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Username or Email">
+        </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="form-element">
+            <input type="checkbox" id="Remember-me">
+            <label for="Remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+            <button onclick="closure()">Sign In</button>
+        </div>
+        <div class="form-element">
+            <a href="">Forgot Password?</a>
+        </div>
+    </div>
+   </div>
 </body>
 </html>

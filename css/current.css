@@ -1,0 +1,156 @@
+/* CURRENTS */
+
+.current {
+    margin-left: 55px;
+    padding-top: 25px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#cskpic {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.4);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    height: 105.18%;
+}
+
+#mipic {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.4);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 105.18%;
+}
+
+.cutout {
+    height: 525px;
+    width: 480px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.4);
+}
+
+#text1 {
+    padding-top: 15px;
+    font-family: 'Teko';
+    font-size: 42px;
+    background-color: white;
+    align-self: center;
+    color: rgb(15, 15, 139);
+    text-decoration: underline;
+    text-decoration-color: rgb(164, 16, 16);
+}
+
+.logos {
+    padding-top: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    background-color: white;
+    width: 35%;
+}
+
+#milogo {
+    padding-bottom: 12px;
+}
+
+.cutout text {
+    padding-top: 20px;
+    font-family: 'Caveat Brush';
+    align-self: center;
+    background-color: white;
+    color: rgb(15, 15, 139);
+    font-size: 40px;
+}
+
+#text2 {
+    font-family: 'Teko';
+    font-size: 42px;
+    color: rgb(15, 15, 139);
+}
+
+#text3 {
+    align-self: center;
+    font-family: 'Teko';
+    background-color: white;
+    font-size: 24px;
+    color: rgb(15, 15, 139);
+}
+
+.accessory {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.sponsors {
+    padding-bottom: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.streamers {
+    padding-bottom: 44px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sponsors span {
+    padding-top: 12px;
+    padding-left: 35%;
+    background-color: white;
+    color: rgb(15, 15, 139);
+    font-size: 18px;
+    font-family: 'Teko';
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.streamers span {
+    padding-top: 12px;
+    padding-left: 40px;
+    background-color: white;
+    color: rgb(15, 15, 139);
+    font-size: 18px;
+    font-family: 'Teko';
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.spimg {
+    padding-top: 5px;
+}
+
+#tataimg {
+    padding-left: 5px;
+    background-color: white;
+    width: 90px;
+}
+
+#dream11img {
+    padding-left: 10px;
+    background-color: white;
+    width: 70px;
+}
+
+#ss {
+    padding-right: 20px;
+    width: 80px;
+    background-color: white;
+}
+
+#jio {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    width: 60px;
+    background-color: white;
+}
