@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Caveat+Brush&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background-image: url(../Images/Background/Backdrop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+.fixtures {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.fixtures h1 {
+    margin-top: 3px;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-size: 36px;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+    background-color: rgba(39, 25, 120, 0.934);
+    color: white;
+}
+
+td {
+    font-family: 'Antonio';
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+tr:hover {
+    background-color: rgb(207, 239, 245);
+    color: yellow;
+}
+
+#leftCurve {
+    border-top-left-radius: 20px;
+}
+
+#rightCurve {
+    border-top-right-radius: 20px;
+}
+
+
+.listing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.listing span {
+    padding-top: 15px;
+}
+
+.material-icons {
+    padding: 0;
+    margin: 0;
+    color: grey;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}

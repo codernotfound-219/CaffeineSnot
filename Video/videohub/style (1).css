@@ -28,9 +28,10 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+#videoHub {
+  text-align: center;
 }
 
 .logo {
@@ -95,6 +96,14 @@ h3 {
 
   width: 60%;
   height: 500px; /* Adjust height as needed */
+}
+
+.material-icons {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 /* Responsiveness (Adjust media queries as needed) */

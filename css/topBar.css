@@ -71,6 +71,11 @@ body {
     background-color: transparent;
 }
 
+.diffPages a:hover {
+    transform: scale(1.25);
+    transition: ease-in-out 0.2s;
+}
+
 .rightTools {
     margin: 10px;
     background-color: transparent;
