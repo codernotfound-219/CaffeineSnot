@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="analytics.css">
+    <title>Statistics</title>
+
+</head>
+<body>
+    <div class="heading">
+        <h2>ANALYTICS</h2>
+    </div>
+    <div class="analytics">
+        <div class ="chart">
+            <div class="piechart">
+                <canvas id="myChart"></canvas>
+                <div class="container">
+                    <h2 id="dn">Trophies won!</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart">
+             <canvas id="orangeCap"></canvas>
+            <h2 id="oc">Highest runs vs Years</h2>
+        </div>
+        
+        <div class="chart">
+            <canvas id="purpleCap"></canvas>
+            <h2 id="oc">Highest wickets vs Years</h2>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="trophies.js"></script>
+</body>
+</html>

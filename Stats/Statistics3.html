@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="statistics.css">
+<body>
+    <img class="mySlides" src="Highest.jpeg" width=100%>
+<img class="mySlides" src="HighScore.jpeg" width=100%>
+<img class="mySlides" src="orange.jpeg" width=100%>
+<img class="mySlides" src="purple.jpeg" width=100%>
+
+<nav>
+    <div class="full-bar">
+<div class="bar-element" id="Oc">Orange Cap</div>
+<div class="bar-element" id="Pc">Purple Cap</div>
+<div class="bar-element" id="Hs">Highest Score</div>
+</div>
+ 
+    <table id="table3" class="hidden">
+        <thead>
+            <tr>
+                <th scope="col">POS</th>
+                <th scope="col">PLAYER</th>
+                <th scope="col">RUNS</th>
+                <th scope="col">BALLS</th>
+                 <th scope="col">SR</th>
+                <th scope="col">4S</th>
+                <th scope="col">6S</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Virat Kohli</td>
+                <td>113*</td>
+                <td>72</td>
+                <td>156.94</td>
+                <td>12</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jos Butler</td>
+                <td>100*</td>
+                <td>58</td>
+                <td>172.41</td>
+                <td>9</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shubman Gill</td>
+                <td>89*</td>
+                <td>48</td>
+                <td>185.41</td>
+                <td>6</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sunil Narine</td>
+                <td>85</td>
+                <td>39</td>
+                <td>217.94</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Riyan Parag</td>
+                <td>84*</td>
+                <td>45</td>
+                <td>186.66</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Virat Kohli</td>
+                <td>83*</td>
+                <td>59</td>
+                <td>140.67</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Sanju Samson</td>
+                <td>82*</td>
+                <td>52</td>
+                <td>157.69</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Quinton De Cock</td>
+                <td>81</td>
+                <td>56</td>
+                <td>144.64</td>
+                <td>8</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Heinrich klassen</td>
+                <td>80*</td>
+                <td>34</td>
+                <td>235.29</td>
+                <td>4</td>
+                <td>7</td>
+            </tr>
+             <tr>
+                <td>10</td>
+                <td>Virat Kohli</td>
+                <td>77</td>
+                <td>49</td>
+                <td>157.14</td>
+                <td>11</td>
+                <td>2</td>
+            </tr>
+        </tbody>    
+    </table>
+    <script>var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+        
+        const OrangeBtn = document.getElementById("Oc");
+        
+        OrangeBtn.addEventListener("click", () => {
+          window.location.href = "Statistics1.html";
+        });
+        const PurpleBtn = document.getElementById("Pc");
+        
+        PurpleBtn.addEventListener("click", () => {
+          window.location.href = "Statistics2.html";
+        });
+        const HighBtn = document.getElementById("Hs");
+        
+        HighBtn.addEventListener("click", () => {
+          window.location.href = "Statistics3.html";
+        });
+        </script>
+</body>
+</html>

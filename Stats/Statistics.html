@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Stats</title>
+</head>
+<link rel="stylesheet" href="statistics.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<body>
+    <img class="mySlides" src="Highest.jpeg" width=100%>
+<img class="mySlides" src="HighScore.jpeg" width=100%>
+<img class="mySlides" src="purple.jpeg" width=100%>
+<img class="mySlides" src="orange.jpeg" width=100%>
+
+<nav>
+    <div class="full-bar">
+<div class="bar-element" id="Oc">Orange Cap</div>
+<div class="bar-element" id="Pc">Purple Cap</div>
+<div class="bar-element" id="Hs">Highest Score</div>
+</div>
+ 
+    </nav>
+<div id="Thala">
+#THALA<br>
+ FOR  A  REASON.
+</div>
+<script>var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+    
+    const OrangeBtn = document.getElementById("Oc");
+    
+    OrangeBtn.addEventListener("click", () => {
+      window.location.href = "Statistics1.html";
+    });
+    const PurpleBtn = document.getElementById("Pc");
+    
+    PurpleBtn.addEventListener("click", () => {
+      window.location.href = "Statistics2.html";
+    });
+    const HighBtn = document.getElementById("Hs");
+    
+    HighBtn.addEventListener("click", () => {
+      window.location.href = "Statistics3.html";
+    });</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="statistics.css">
+<body>
+    <img class="mySlides" src="Highest.jpeg" width=100%>
+<img class="mySlides" src="HighScore.jpeg" width=100%>
+<img class="mySlides" src="orange.jpeg" width=100%>
+<img class="mySlides" src="purple.jpeg" width=100%>
+
+<nav>
+    <div class="full-bar">
+<div class="bar-element" id="Oc">Orange Cap</div>
+<div class="bar-element" id="Pc">Purple Cap</div>
+<div class="bar-element" id="Hs">Highest Score</div>
+</div>
+ 
+    <table id="table2" class="hidden">
+        <thead>
+            <tr>
+                <th scope="col">POS</th>
+                <th scope="col">PLAYER</th>
+                <th scope="col">TEAMS</th>
+                <th scope="col">ECON</th>
+                 <th scope="col">INN</th>
+                <th scope="col">OV</th>
+                <th scope="col">RUNS</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yuzvendra Chahal</td>
+                <td>RR</td>
+                <td>7.40</td>
+                <td>6</td>
+                <td>22.0</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jasprit Bumrah</td>
+                <td>MI</td>
+                <td>5.95</td>
+                <td>5</td>
+                <td>20.0</td>
+                <td>119</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kagiso Rabada</td>
+                <td>PBKS</td>
+                <td>7.95</td>
+                <td>6</td>
+                <td>24.0</td>
+                <td>191</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mustafizur Rahman</td>
+                <td>CSK</td>
+                <td>8.00</td>
+                <td>4</td>
+                <td>16.0</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Khaleel Ahmed</td>
+                <td>DC</td>
+                <td>8.79</td>
+                <td>6</td>
+                <td>24.0</td>
+                <td>211</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Arshdeep Singh</td>
+                <td>PBKS</td>
+                <td>9.25</td>
+                <td>6</td>
+                <td>22.1</td>
+                <td>205</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Sam Curran</td>
+                <td>PBKS</td>
+                <td>8.44</td>
+                <td>6</td>
+                <td>18.0</td>
+                <td>152</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Mohit Sharma</td>
+                <td>GT</td>
+                <td>9.35</td>
+                <td>6</td>
+                <td>23.0</td>
+                <td>216</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Gerald Coetzee</td>
+                <td>MI</td>
+                <td>10.59</td>
+                <td>5</td>
+                <td>18.3</td>
+                <td>196</td>
+            </tr>
+             <tr>
+                <td>10</td>
+                <td>Yash Thakur</td>
+                <td>LSG</td>
+                <td>9.57</td>
+                <td>5</td>
+                <td>18.3</td>
+                <td>142</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+        
+        const OrangeBtn = document.getElementById("Oc");
+        
+        OrangeBtn.addEventListener("click", () => {
+          window.location.href = "Statistics1.html";
+        });
+        const PurpleBtn = document.getElementById("Pc");
+        
+        PurpleBtn.addEventListener("click", () => {
+          window.location.href = "Statistics2.html";
+        });
+        const HighBtn = document.getElementById("Hs");
+        
+        HighBtn.addEventListener("click", () => {
+          window.location.href = "Statistics3.html";
+        });</script>
+</body>
+</html>

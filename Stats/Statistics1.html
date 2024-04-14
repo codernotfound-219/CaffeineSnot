@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="statistics.css">
+<body>
+    <img class="mySlides" src="Highest.jpeg" width=100%>
+<img class="mySlides" src="HighScore.jpeg" width=100%>
+<img class="mySlides" src="orange.jpeg" width=100%>
+<img class="mySlides" src="purple.jpeg" width=100%>
+
+<nav>
+    <div class="full-bar">
+<div class="bar-element" id="Oc">Orange Cap</div>
+<div class="bar-element" id="Pc">Purple Cap</div>
+<div class="bar-element" id="Hs">Highest Score</div>
+</div>
+ 
+    </nav>
+    <table id="table1" class="hidden">
+        <thead>
+            <tr>
+              <th>POS</th>
+              <th>PLAYER</th>
+              <th>HS</th>
+              <th>Avg</th>
+              <th>100s</th>
+              <th>RUNS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Virat Kohli</td>
+              <td>113*</td>
+              <td>79.75</td>
+              <td>1</td>
+              <td>319</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Riyan Parag</td>
+              <td>84</td>
+              <td>71.00</td>
+              <td>0</td>
+              <td>284</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sanju Samson</td>
+              <td>82</td>
+              <td>66</td>
+              <td>0</td>
+              <td>264</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Shubman Gill</td>
+              <td>89*</td>
+              <td>51</td>
+              <td>0</td>
+              <td>255</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Sai Sudharsan</td>
+              <td>45</td>
+              <td>37.67</td>
+              <td>0</td>
+              <td>226</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Rishabh Pant</td>
+              <td>55</td>
+              <td>32.33</td>
+              <td>0</td>
+              <td>194</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Tristan Stubbs</td>
+              <td>71*</td>
+              <td>63</td>
+              <td>0</td>
+              <td>189</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Klaasen</td>
+              <td>80*</td>
+              <td>62</td>
+              <td>0</td>
+              <td>178</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Nicholas Pooran</td>
+              <td>80*</td>
+              <td>62</td>
+              <td>0</td>
+              <td>178</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Abishek Sharma</td>
+              <td>80*</td>
+              <td>62</td>
+              <td>0</td>
+              <td>178</td>
+            </tr>
+            </tbody>
+        
+        
+    </table>
+    <script>var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+        
+        const OrangeBtn = document.getElementById("Oc");
+        
+        OrangeBtn.addEventListener("click", () => {
+          window.location.href = "Statistics1.html";
+        });
+        const PurpleBtn = document.getElementById("Pc");
+        
+        PurpleBtn.addEventListener("click", () => {
+          window.location.href = "Statistics2.html";
+        });
+        const HighBtn = document.getElementById("Hs");
+        
+        HighBtn.addEventListener("click", () => {
+          window.location.href = "Statistics3.html";
+        });</script>
+</body>
+</html>
