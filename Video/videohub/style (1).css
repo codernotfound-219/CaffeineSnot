@@ -45,7 +45,7 @@ a {
 }
 
 .logo:hover {
-  color: #4ee712; 
+  color: #00e1ff; 
   transition: color 0.s ease-in-out;
 }
 .full-bar {
@@ -73,7 +73,7 @@ a {
 
 .video-grid {
   display: flex; 
-  justify-content: center;/* Adjust as needed */
+  justify-content: center;
   gap: 50px;
   height: 400px;
 }
@@ -93,9 +93,12 @@ h3 {
 }
 
 .video-card iframe {
+  
+  margin-top: 20px;
+  width: 70%;
+  height: 500px; 
+  border-radius: 30px;
 
-  width: 60%;
-  height: 500px; /* Adjust height as needed */
 }
 
 .material-icons {
@@ -106,7 +109,6 @@ h3 {
   text-decoration: none;
 }
 
-/* Responsiveness (Adjust media queries as needed) */
 @media (max-width: 768px) {
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
